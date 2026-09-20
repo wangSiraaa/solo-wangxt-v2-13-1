@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: tm-platform
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/tm}
+    username: ${DB_USER:tm}
+    password: ${DB_PASSWORD:tm}
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+server:
+  port: 8080

@@ -18,6 +18,10 @@ id_ed25519
 *.p12
 *.pfx
 node_modules/
+tools/
+target/
+dist/
+frontend/dist/
 .venv/
 venv/
 __pycache__/
