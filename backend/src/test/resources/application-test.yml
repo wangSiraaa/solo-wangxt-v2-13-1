@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+tmhub:
+  migration:
+    chunk-size: 2
+  export:
+    chunk-size: 3

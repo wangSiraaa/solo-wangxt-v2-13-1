@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: tm-hub-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tmhub
+    username: tmhub
+    password: tmhub
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8080
+
+tmhub:
+  migration:
+    chunk-size: 25
+  export:
+    chunk-size: 50
